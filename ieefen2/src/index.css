@@ -65,7 +65,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   position: absolute;
   bottom: 0%;
   width: 100%;
+=======
+>>>>>>> 93007ba6154cd4a28458af0dc1bd287ad9917625
 }
