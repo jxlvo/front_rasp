@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Table = () => {
-<<<<<<< HEAD
   var dayName = ["domingo", "seg", "ter", "qua", "qui", "sex", "sábado"];
   var now = new Date();
   var today = dayName[now.getDay()];
@@ -42,8 +41,8 @@ const Table = () => {
 
     return (
       user["DIA_DA_SEMANA"].trim().toLowerCase() === today &&
-      currentTime >= startTime - 30 &&
-      currentTime <= endTime
+      currentTime >= startTime -90  &&
+      currentTime < endTime 
     );
   });
 
@@ -65,22 +64,12 @@ const Table = () => {
     startIndex + itemsPerPage
   );
 
-=======
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/horarios_fen")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
-  }, []);
->>>>>>> 93007ba6154cd4a28458af0dc1bd287ad9917625
   return (
     <div className="container">
       <div className="mt-3">
         <table id="table">
           <thead>
             <tr>
-<<<<<<< HEAD
               <th>PROFESSOR</th>
               <th>SALA</th>
               <th>DISCIPLINA</th>
@@ -100,27 +89,6 @@ const Table = () => {
                 <td align="center">{user["HORÁRIO_FINAL"]}</td>
               </tr>
             ))}
-=======
-              <th>ID</th>
-              <th>Disciplina</th>
-              <th>Docente</th>
-              <th>Horário</th>
-              <th>Sala</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((user, index) => {
-              return (
-                <tr key={index}>
-                  <td>{user.id}</td>
-                  <td>{user.disciplina}</td>
-                  <td>{user.docente}</td>
-                  <td>{user.horario}</td>
-                  <td>{user.sala}</td>
-                </tr>
-              );
-            })}
->>>>>>> 93007ba6154cd4a28458af0dc1bd287ad9917625
           </tbody>
         </table>
       </div>

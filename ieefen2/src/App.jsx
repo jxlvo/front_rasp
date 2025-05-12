@@ -1,13 +1,15 @@
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Footer from "./components/Footer";
 import Table from "./components/Table";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Table />
-      <Main />
+      <div className="app-container">
+        <Header />
+        <Table />
+        <Footer />
+      </div>
     </>
   );
 };
