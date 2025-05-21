@@ -4,8 +4,8 @@ import banner2 from "../assets/banner2.png";
 const Footer = () => {
   return (
     <>
-      <div className="footer">
-        <div className="imgs">
+      <div className="footer-container">
+        <div className="footer-content">
           <img className="banner" src={banner} alt="" />
           <img className="banner2" src={banner2} alt="" />
         </div>

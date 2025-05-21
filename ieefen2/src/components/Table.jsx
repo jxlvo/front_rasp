@@ -12,7 +12,7 @@ const Table = () => {
 
   const [data, setData] = useState([]);
   const [startIndex, setStartIndex] = useState(0);
-  const itemsPerPage = 16;
+  const itemsPerPage = 9;
   const updateInterval = 10000; // 5 segundos
 
   // Buscar dados da API
@@ -41,8 +41,8 @@ const Table = () => {
 
     return (
       user["DIA_DA_SEMANA"].trim().toLowerCase() === today &&
-      currentTime >= startTime -90  &&
-      currentTime < endTime 
+      currentTime >= startTime - 1000 &&
+      currentTime < endTime + 1000
     );
   });
 
@@ -65,14 +65,14 @@ const Table = () => {
   );
 
   return (
-    <div className="container">
-      <div className="mt-3">
-        <table id="table">
+    <div className="table-container">
+      <div className="c">
+        <table id="schedule-table">
           <thead>
             <tr>
-              <th>PROFESSOR</th>
-              <th>SALA</th>
               <th>DISCIPLINA</th>
+              <th>SALA</th>
+              <th>PROFESSOR</th>
               <th>TURMA</th>
               <th>HORÁRIO INICIAL</th>
               <th>HORÁRIO FINAL</th>
@@ -81,9 +81,9 @@ const Table = () => {
           <tbody>
             {paginatedData.map((user, index) => (
               <tr key={index}>
-                <td>{user.PROFESSOR}</td>
-                <td>{user.SALA}</td>
                 <td>{user.DISCIPLINA}</td>
+                <td>{user.SALA}</td>
+                <td>{user.PROFESSOR}</td>
                 <td align="center">{user["TURMA"]}</td>
                 <td align="center">{user["HORÁRIO_INICIAL"]}</td>
                 <td align="center">{user["HORÁRIO_FINAL"]}</td>

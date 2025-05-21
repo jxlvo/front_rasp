@@ -29,7 +29,7 @@ function DigitalClock() {
   };
 
   // 5. Renderiza o relógio
-  return <p className="clock">{formatTime(currentTime)}</p>;
+  return <div className="clock">{formatTime(currentTime)}</div>;
 }
 
 export default DigitalClock;

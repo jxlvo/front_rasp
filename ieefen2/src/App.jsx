@@ -7,7 +7,9 @@ const App = () => {
     <>
       <div className="app-container">
         <Header />
-        <Table />
+        <main className="main-content">
+          <Table />
+        </main>
         <Footer />
       </div>
     </>
