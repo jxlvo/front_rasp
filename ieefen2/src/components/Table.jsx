@@ -6,6 +6,8 @@ const Table = () => {
   var now = new Date();
   var today = dayName[now.getDay()];
 
+  const JSON_API_URL =
+    "https://front-rasp-bhy7ou5fy-jxlvos-projects.vercel.app/horarios.json";
   const hour = new Date();
   const currentHour = hour.getHours();
   const currentMinute = hour.getMinutes();
@@ -18,7 +20,7 @@ const Table = () => {
   // Buscar dados da API
   useEffect(() => {
     axios
-      .get("horarios.json")
+      .get(JSON_API_URL)
       .then((res) => {
         setData(res.data);
       })

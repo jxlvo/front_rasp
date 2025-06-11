@@ -27,11 +27,13 @@ const Footer = () => {
   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const JSON_API_URL2 =
+    "https://front-rasp-bhy7ou5fy-jxlvos-projects.vercel.app/banners.json";
 
   useEffect(() => {
     const fetchBanners = async () => {
       try {
-        const response = await fetch("/public/banners.json");
+        const response = await fetch(JSON_API_URL2);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
