@@ -12,8 +12,8 @@ const Table = () => {
 
   const [data, setData] = useState([]);
   const [startIndex, setStartIndex] = useState(0);
-  const itemsPerPage = 9;
-  const updateInterval = 10000; // 5 segundos
+  const itemsPerPage = 10;
+  const updateInterval = 15000;
 
   // Buscar dados da API
   useEffect(() => {
@@ -41,9 +41,22 @@ const Table = () => {
 
     return (
       user["DIA_DA_SEMANA"].trim().toLowerCase() === today &&
-      currentTime >= startTime - 1000 &&
-      currentTime < endTime + 1000
+      currentTime >= startTime - 300 &&
+      currentTime < endTime
     );
+  });
+
+  filteredData.sort((a, b) => {
+    const horarioA = a["HORÁRIO_INICIAL"];
+    const horarioB = b["HORÁRIO_INICIAL"];
+
+    if (horarioA < horarioB) {
+      return -1;
+    }
+    if (horarioA > horarioB) {
+      return 1;
+    }
+    return 0;
   });
 
   // Atualização automática para alternar os grupos de dados

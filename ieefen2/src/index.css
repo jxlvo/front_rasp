@@ -129,14 +129,15 @@ body {
 .footer-content {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 5px;
 }
 
-.banner,
-.banner2 {
+.banner {
   width: 50vw;
   max-width: 100vw;
   height: 15vh;
@@ -147,4 +148,10 @@ body {
   font-size: 1vw;
   font-weight: 700;
   color: white;
+  margin-top: auto;
+}
+
+.footer-text p {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

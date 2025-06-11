@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "url": "/src/assets/bannerpesday.png",
+    "alt_text": "Banner promocional do evento PESDAY 2025",
+    "ordem": 1
+  },
+  {
+    "id": 2,
+    "url": "/src/assets/banner2.png",
+    "alt_text": "Banner de Chamada de Novos Membros",
+    "ordem": 2
+  },
+  {
+    "id": 3,
+    "url": "/src/assets/bannerpesday2.png",
+    "alt_text": "Banner promocional do evento PESDAY 2025 em preto e branco",
+    "ordem": 3
+  },
+  {
+    "id": 4,
+    "url": "/src/assets/banner3.png",
+    "alt_text": "Banner de Chamada de Novos Membros em preto e branco",
+    "ordem": 4
+  },
+  {
+    "id": 5,
+    "url": "/src/assets/banner.png",
+    "alt_text": "Banner",
+    "ordem": 5
+  },
+  {
+    "id": 6,
+    "url": "/src/assets/banner.png",
+    "alt_text": "Banner",
+    "ordem": 6
+  }
+]
