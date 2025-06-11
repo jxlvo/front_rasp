@@ -1,5 +1,5 @@
 import React from "react";
-import logoIEEE from "/assets/logo IEEE UERJ branca (1).png";
+import logoIEEE from "/assets/logoieeeuerjbranca.png";
 import logoFen from "/assets/logofen.jpg";
 import bannerpro from "/assets/banner_pt.png";
 import DigitalClock from "./Digitalclock";
