@@ -13,26 +13,14 @@
   },
   {
     "id": 3,
-    "url": "https://front-rasp.vercel.app/assets/bannerpesday2.png",
-    "alt_text": "Banner promocional do evento PESDAY 2025 em preto e branco",
+    "url": "https://front-rasp.vercel.app/assets/logo_rnr.png",
+    "alt_text": "Banner",
     "ordem": 3
   },
   {
     "id": 4,
-    "url": "https://front-rasp.vercel.app/assets/banner3.png",
-    "alt_text": "Banner de Chamada de Novos Membros em preto e branco",
+    "url": "https://front-rasp.vercel.app/assets/logo_rnr.png",
+    "alt_text": "Banner",
     "ordem": 4
-  },
-  {
-    "id": 5,
-    "url": "https://front-rasp.vercel.app/assets/banner.png",
-    "alt_text": "Banner",
-    "ordem": 5
-  },
-  {
-    "id": 6,
-    "url": "https://front-rasp.vercel.app/assets/banner.png",
-    "alt_text": "Banner",
-    "ordem": 6
   }
 ]
